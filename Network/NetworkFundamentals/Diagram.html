@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Network Fundamentals</h1>
+    <div>
+
+        <ol>
+            <li><h3>Explain the Role and functions of Network Components</h3>
+                <ol>
+                    <li>Routers</li>
+                    <li>Layer 2 and Layer 3 switches</li>
+                    <li>Next Generation fiewall and IPS</li>
+                    <li>Access Point</li>
+                    <li>Controllers (Cisco DNA datacenter and WLA)</li>
+                    <li>Endpoints</li>
+                    <li>Servers</li>
+                    <li>PoE</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <div>
+        <div>
+            <h2>Network Diagrams</h2><br>
+            <p>A Network diagram is a visual representation of a computer or telecommunications network.
+                It shows the components that make up a network and how they interact, including routers, devices,
+                hubs, firewalls, etc. This network diagram shows a local area network (LAN):
+                Depending on its scope and purpose, a network diagram may contain lots of detail or just provide
+                a broad overview. For instance, a diagram of a LAN might could show the IP addresses of individual
+                computers, while the diagram of a MAN (metropolitan area network) could represent buildings or areas
+                with a single node.
+            </p>
+            <div>
+                <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/seo/network/discovery/local-area-network-diagram.svg" alt="LAN network" width="400" height="400">
+            </div>
+            <p>A network diagram can be either physical or logical</p>
+        </div>
+        <div>
+            <h2>Logical Network diagrams</h2>
+            <p>A logical network diagram decribes the way information flows through a network. Therefore, logical diagrams typically
+                show subnets (includeing VLAN IDs, Masks, Addresses).Network devices like Routers, Firewalls, and routing protocols.
+            </p>
+            <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/seo/network/discovery/cisco-isg-diagram.svg" alt="Logical network diagram" width="400" height="400">
+            <p>In the Open Systems Interconnection (OSI) model, logical network diagrams correlate with the information contained
+                in layer 3 (L3). Also known as the “network layer,” L3 is an abstraction layer that deals with packet forwarding
+                through intermediate routers. Level 2 shows the data links between adjacent nodes, while level 1 shows the purely
+                physical layout.
+            </p><br>
+        </div>
+        <div>
+            <h2>Physical Network diagrams</h2>
+            <p>A physical network disgram shows the actual phuysical arrangement of the components that make up the network,
+                including cables and hardware. Typically, the diagram gives a birds eye view of the network in its physical
+                space like a floor plan.
+            </p>
+        </div>
+        <div>
+            <h3>How are network diagrams used?</h3>
+            <p>With the capacity for showing network components interact, network diagrams can serve a veirity of purposes, including:</p>
+            <ul>
+                <li>Planning the structure of a home or professional network</li>
+                <li>Cordinating updates to an existing network</li>
+                <li>Reporting and troubleshooting network problems</li>
+                <li>To Comply to PCI or other requirements</li>
+                <li>As Documentation for external communication, or onboarding etc</li>
+                <li>To keep track of components</li>
+                <li>Sending relivant information to a vendor for a RFP (request for proposal) without disclosing confidential information</li>
+                <li>Selling a relivant proposal to finacial stakeholders</li>
+                <li>Proposing high level, syslog infrastructure changes</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <h1>Network Fundamentals</h1>
+    <div>
+        <ol>
+            <li>
+                <h3>Describe Charateristics of network topology architectures</h3>
+                <ol>
+                    <li>Two-tier</li>
+                    <li>Three-tier</li>
+                    <li>Spine-leaf</li>
+                    <li>WAN</li>
+                    <li>Small office/home office</li>
+                    <li>On-premise and cloud</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <div>
+        <h3>What is network topology?</h3>
+        <p>Network topology refers to the arrangment of elements in a network. Like Network diagrams, Network topologies
+            can describe either a physical or logical aspects of a network. Logical topology can also be refered to as
+            signal topology.
+        </p>
+    </div>
+    <div>
+        <h2>Bus Topology</h2>
+        <p>Also known as backbone, linear, or ethernet topology, this type of network is distiguished for having all of
+            the nodes connected by a central medium. The "bus" which has exactly 2 end points.
+        </p>
+        <p>Bus topologies are easy to configure and require less cable length than some other topologies.
+            However if the central bus breaks down, so does the whole network, and it can be dificult to isolate the problem 
+        </p>
+    </div>
+    <div>
+        <h2>Ring Topology</h2>
+        <p>Nodes are connected in a circular configuation, and packets of information are sent through the ring until
+            they reach there destination. Ring topology can outperform those based on the bus topology, and they can 
+            easily be reconfiguired to add or remove devices. However, they are still relively vulnerable, since the
+            whole network fails if a single network fails. Also, bandwidth must be shared accross all the devices
+            and connection.
+        </p>
+    </div>
+    <div>
+        <h2>Star Topology</h2>
+        <p>One of the most common topologies, the Star topology consists of a central hub or switch, through which all of
+            the data passes. Along with all the peripheral nodes connected to that central node.
+                Star topology tends to be reliable because individual machines may crash without affecting the rest of the
+            network. But if the central hub or switch fails, none of the connected nodes will be able to access it.
+            Cable cost tend to be higher aswell.
+        </p>
+    </div>
+    <div>
+        <h2>Mesh Topology</h2>
+        <p>There are two types of mesh topologies. In the first, which is called full mesh topologies, each node
+            is directly connected to every other node.</p>
+        <p>In a partial mesh topology, nodes are only connected to the nodes they connect with the most</p>
+        <p>Most Networks employ some combination of the topologies to yeild whats called a HYBRID typology 
+            For example, the TREE topology is a combination of the bus and mesh topologies.
+        </p>
+        <p>The logical and physical topology of a particular network may resemble one another, or
+            they may be entirely different. For example a twitsted pair ethernet network exists
+            as a star topology physicaly but follows the bus topology logically.
+        </p>
+    </div>
+    <div>
+        <h1>Network diagram examples</h1>
+        <p>Network diagrams can be used to represent virtually any Network, which means there is alot of variety.
+            Network diagrams vary in two important ways: by the type of network they represent and by network topology,
+            or the arrangments of the componenets.
+        </p>
+        <h3>Examples</h3>
+    </div>
+    <div>
+        <div>
+            <h2>Virtual Private Network</h2>
+            <p>Allows users to access a private network over a public network as they are directly connected to the private network</p>
+        </div>
+        <div>
+            <h2>Server Rack</h2>
+            <p>Shows the layout of the rack system</p>
+        </div>
+        <div>
+            <h2>Enterprise Private Network</h2>
+            <p>Connects diverse elements within a business, such as multiple sites</p>
+        </div>
+        <div>
+            <h2>DSL Network connectivity</h2>
+            <p>Shows how information is relayed over telephone lines</p>
+        </div>
+    </div>
+    <div>
+        <h1>Network Diagram symbols</h1>
+        <p>Since a network diagram is a visual representation of an actual system, it relies on symbols to convey meaning.
+            Some symbols represent actual physical entities, While others represent the kinds of relationships that 
+            exist between entities.</p>
+            <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/seo/network/discovery/symbols-for-all-about-network-diagrams.svg" alt="Common used symbols" width="500" height="500">
+            <div>
+                <h2>Cisco, AWS, GCP, and Azure symbols</h2>
+                <p>Cisco INC is one of the largest providers of networking equipment in the world.
+                    As such they have to develope a comprehensive set of network topology icons that correspond
+                    with the equipment they offer. Cisco Advanced Services Team helps organizations optimize their
+                    networks for maximium uptime. These icons offer a clear convienent way to communicate about
+                    those networks.
+                </p>
+                <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/seo/network/discovery/cisco-network-diagram.svg" alt="Cisco icon symbols" width="400" height="400">
+            </div>
+            <div>
+                <p>Amazon Web Services (AWS), Google cloud platform, and Azure. These three are also leading providers in
+                    cloud hosting services, also have there own set of symbols and icons describing networks hosted on
+                    there services. AWS example:
+                </p>
+                <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/seo/network/discovery/aws-network-diagram-example.svg" alt="" width="500" height="500">
+            </div>
+            <div></div>
+    </div>
+</body>
+</html>

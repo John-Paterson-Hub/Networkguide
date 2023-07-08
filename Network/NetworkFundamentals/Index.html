@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Network Fundamentals</h1>
+    <div>
+
+        <ol>
+            <li><h3>Explain the Role and functions of Network Components</h3>
+                <ol>
+                    <li>Routers</li>
+                    <li>Layer 2 and Layer 3 switches</li>
+                    <li>Next Generation fiewall and IPS</li>
+                    <li>Access Point</li>
+                    <li>Controllers (Cisco DNA datacenter and WLA)</li>
+                    <li>Endpoints</li>
+                    <li>Servers</li>
+                    <li>PoE</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <div>
+        <h2>OSI Model</h2><br>
+        <h3>(Open Systems Interconnection Model)</h3><br>
+        <p>OSI Model is a conceptual framework used to describe the functions of a networking system.
+            Characterized computing functions into a universal set of rules and requirements in order
+            to support interperability between different products and software.
+                Communications between a computing system are split into seven abstract layers: Physical, Data link,
+            Network, Transport, Session, Presentation, and Application.
+                Created in a  time where network computing was in its infancy 1984. Though it does not
+                always directly map to specific systems it can still be used to describe Network Nrchitecture.
+        </p>
+    </div>
+    <div>
+        <h2>OSI Model 7 Layers</h2><br>
+        <div>
+            <h3>Physical</h3><br>
+            <p>Lowest Layer of the OSI Model concerned with electrically or optically transmitted raw unstructed
+                data bits accross the network from the physical layer of the sending device to the physical layer
+                of the reciving device. It can be specified such as VOLTAGES, PIN LAYOUT,
+                CABALING, and RADIO FREQUENCIES. At the Physical layer one might find "Physical" resources
+                such as NETWORK HUBS, CABLING, REPEATERS, NETWORK ADAPTERS or MODEMS.
+            </p>
+        </div><br>
+        <div>
+            <h3>Data Link Layer</h3>
+            <p>At the Data link Layer, directly connected nodes are used to perform node-to-node data transfer
+                where the data is packed into frames. The Data Link layer also corrects error that might
+                have occured at the physical layer.
+                The data link layer encompasses two sub-layers of its own. The First sub layer
+                Media Access Control (MAC), provides flow control and multiplexing for device transmission
+                over a network. The second sub layer, Logical link control (LLC) provides flow and error Control
+                over the physical medium as well as identifies line protocol.
+            </p>
+        </div><br>
+        <div>
+            <h3>Network Layer</h3>
+            <p>The network layer is responsible for receiving frames from the data link layer, and delivering
+                them to there intended destinations among based on the addresses containing inside the frame. 
+                The network layer finds the destination by using local addresses such as IP (Internet Protocol).
+                At this layer, routers are a crucial component used by quite literally route information where
+                it needs to go between the network.
+            </p>
+        </div><br>
+        <div>
+            <h3>Transport Layer</h3>
+            <p>The Transport Layer manages the delivery and error checking of data packets. It regulates
+                the size, sequencing, and ultimately the transfer of data between systems and hosts.
+                One of the most common examples of the transport layer is TCP  or the
+                transmission control Protocal.
+            </p>
+        </div><br>
+        <div>
+            <h3>Session Layer</h3>
+            <p>The Session layer controls the conversation between computers. A Session or connection
+                between machines is set up, managed, and termanated at layer 5. Session layer services
+                also include authentication and reconnections.
+            </p>
+        </div><br>
+        <div>
+            <h3>Presentation Layer</h3>
+            <p>The presentation layer formats or translates data for the application layer based on the syntax
+                or semantics that the application accepts. Because of this, it at times also called
+                the syntax layer. This layer can also handle the encyption and decyption required by
+                the application layer. 
+            </p>
+        </div><br>
+        <div>
+            <h3>Application Layer</h3>
+            <p>At this layer, Both the end user and the application interact directly with the software application
+                This layer sees network services provided to the end-user application such as web browser or office 365.
+                The application layer identifies communication partners, resources, avaliablitity,
+                and syncronized communication.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
